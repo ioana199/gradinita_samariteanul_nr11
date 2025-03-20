@@ -4,17 +4,142 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class = "banner">
+<body class="contact_background">
+    <div class = "banner2">
         <div class="navbar">
             <img src="logo.png" class="logo">
             <ul>
-                <li><a href="index.html">Acasă</a></li>
-                <li><a href="informatii.html">Informații</a></li>
-                <li><a href="galerie.html">Galerie foto</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="file:///C:/Users/asus/Desktop/site%20gradinita/index.html">Acasă</a></li>
+                <li><a href="file:///C:/Users/asus/Desktop/site%20gradinita/informatii.html">Despre noi</a></li>
+                <li><a href="file:///C:/Users/asus/Desktop/site%20gradinita/galerie.html">Inters public</a></li>
+                <li><a href="file:///C:/Users/asus/Desktop/site%20gradinita/contact.html">Contact</a></li>
             </ul>
         </div>
+       
+        <div class="content">
+            <h1>CONTACT</h1>
+            <p>Grădinița Samariteanul Sâmbăteni</p>
+        </div>
     </div>
+    <section class="contact">
+        <div class="linie">
+            <div class="contact_box">
+                <div class="icon">
+                    <img src="icon_locatie.png" class="icon">
+                </div>
+                <div class="text">
+                    <h3>Locație</h3><br>
+                    <p>Sâmbăteni Nr. 422</p>
+                </div>      
+            </div>
+            <div class="contact_box">
+                <div class="icon">
+                    <img src="icon_mail.png" class="icon">
+                </div>
+                <div class="text">
+                    <h3>E-mail</h3><br>
+                    <p>sgradinita@yahoo.com</p>
+                </div>      
+            </div>
+            <div class="contact_box">
+                <div class="icon">
+                    <img src="icon_telefon.png" class="icon">
+                </div>
+                <div class="text">
+                    <h3>Telefon</h3><br>
+                    <p>0257518000</p>
+                </div>      
+            </div>
+        </div>
+        <div class="contactForm">
+            <form>
+                <h2>Trimite mesaj</h2>
+                <div class="inputbox">
+                    <input type="text" id="name" name="" required="required">
+                    <span>Nume și prenume</span>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="email" name="" required="required">
+                    <span>E-mail</span>
+                </div>
+                <div class="inputbox">
+                    <textarea id="message" required="required"></textarea>
+                    <span>Scrie mesajul tău...</span>
+                </div>
+                <div class="inputbox">
+                    <input type="submit" name="" onclick="sendEmail()" value="Trimite">
+                    
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="map">
+        <div class="googlemaps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11058.39041357081!2d21.51902898894401!3d46.1388449089186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745850162f00001%3A0x665ea6b796aaf352!2sBiserica%20Penticostal%C4%83%20Tabor!5e0!3m2!1sro!2sro!4v1742422908750!5m2!1sro!2sro" width="100%" height="90%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="logo.png" class="logo">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque molestias cumque perferendis molestiae consequatur expedita alias ut officiis accusamus deleniti minus voluptatum culpa facilis illum, beatae deserunt quo! Autem.
+                </p>
+            </div>
+            <div class="col">
+                <h3>Meniu</h3>
+                <ul>
+                    <li class="men"><a href="file:///C:/Users/asus/Desktop/site%20gradinita/index.html">Acasă</a></li>
+                    <li><a href="file:///C:/Users/asus/Desktop/site%20gradinita/informatii.html">Despre noi</a></li>
+                    <li><a href="file:///C:/Users/asus/Desktop/site%20gradinita/galerie.html">Inters public</a></li>
+                    <li><a href="file:///C:/Users/asus/Desktop/site%20gradinita/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Parteneri</h3>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Grădinița "Samariteanul"</h3>
+                <ul>
+                    <li>
+                        <img src="1.png" class="little_icon">
+                        0257518000
+                    </li>
+                    <li>
+                        <img src="2.png" class="little_icon">
+                        sgradinita@yahoo.com
+                    </li>
+                    <li>
+                        <img src="3.png" class="little_icon">
+                        Sâmbăteni Nr.422
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© Copyrights 2025Grădiniţa Samariteanul. All Rights Reserved        </p>
+    </footer>
+
+    <script>
+        function sendEmail() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+            
+            let subject = "Mesaj de la " + name;
+            let body = "Nume: " + name + "%0AEmail: " + email + "%0A%0AMesaj:%0A" + message;
+
+            // Deschide clientul de email
+            window.location.href = "mailto:ioanaardelean199@gmail.com?subject=" + subject + "&body=" + body;
+        }
+    </script>
+
 </body>
 </html>
