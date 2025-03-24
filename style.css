@@ -175,14 +175,12 @@ footer{
 footer .row .col ul li{
     list-style: none;
     margin-bottom: 5px ;
-    text-size: 8px;
-
 }
 
 footer ul li a{
     text-decoration: none;
     color: #fff;
-    text-size: 8px;
+    font-size: 8px;
 }
 
 footer ul li a:hover{
