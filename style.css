@@ -175,6 +175,8 @@ footer{
 footer .row .col ul li{
     list-style: none;
     margin-bottom: 5px ;
+    text-size: 10px;
+
 }
 
 footer ul li a{
