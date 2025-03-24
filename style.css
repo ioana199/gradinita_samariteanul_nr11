@@ -163,23 +163,24 @@ footer{
     padding: 10px;
 }
 .col p{
-    margin-top: 12px;
+    margin-top: 5px;
 }
 
 .col h3{
     width: fit-content;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     position: relative;
 }
 
 footer .row .col ul li{
     list-style: none;
-    margin-bottom: 12px ;
+    margin-bottom: 5px ;
 }
 
 footer ul li a{
     text-decoration: none;
     color: #fff;
+    text-size: 10px;
 }
 
 footer ul li a:hover{
