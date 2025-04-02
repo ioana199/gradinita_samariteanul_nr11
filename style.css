@@ -8,7 +8,7 @@
     width: 100%;
     height: 100%;
     /*background-color: rgb(248, 223, 175);*/
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(background.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(copii_2.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -16,7 +16,7 @@
 .banner2{
     width: 100%;
     height: 70%;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(background.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(copii_2.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -114,6 +114,58 @@
     margin-top: 30px; 
 }
 
+.content_index .text_index h2{
+    font-size: 60px;
+    margin-top: 150px; 
+    text-align: center;
+    font-family: "Charmonman", cursive;
+    font-optical-sizing: auto;
+    margin-bottom: 130px;
+}
+
+.poze {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; /* Spațiu între imagini */
+    padding: 50px 70px; /* Mai mult spațiu pe margini */
+    justify-content: center;
+}
+
+.poza {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.poza img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.poza:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive: 2 imagini pe rând pe ecrane medii */
+@media (max-width: 900px) {
+    .poze {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 40px;
+    }
+}
+
+/* Responsive: 1 imagine pe rând pe ecrane mici */
+@media (max-width: 600px) {
+    .poze {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px 30px;
+    }
+}
+
 
 @media(max-width: 700px)
 {
@@ -135,18 +187,40 @@
     }
 }
 
+.wave-container {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    background: none;
+    margin-top: -5px;
+    z-index: 1;
+
+}
+
+.wave-container svg {
+    display: block;
+    position: absolute;
+    width: 100%;
+    /*top: -1px;*/
+    left: 0;
+    bottom: 0;
+    height: auto;
+}
+
 footer{
+    margin-top: -100px;
     width: 100%;
     position: relative;
     bottom: 0;
-    background: rgb(33, 30, 30);
+    background: #b77349;
     color: #fff;
     padding: 100px 0 30px;
     border-top-left-radius: 0px;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 0;
-
+    /*margin-bottom: 0;*/
+    z-index: 2;
 }
 
 .row{
@@ -201,7 +275,18 @@ hr{
 
 .copyright{
     text-align: center;
-    color: darkgrey;
+    color: rgb(186, 186, 186);
+}
+
+@media (max-width: 900px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer .col {
+        width: 100%;
+    }
 }
 
 /*-------Despre noi-------*/
@@ -221,6 +306,7 @@ hr{
     padding: 20px 30px;
     box-sizing: border-box;
     text-align: left;
+
 }
 
 .info_box p, .info_box ul, .info_box br{
@@ -234,6 +320,8 @@ hr{
 
 .info_box h3, p{
     color: #fff;
+    font-family: "Source Serif 4", serif;
+
 }
 
 .info_pic{
@@ -400,6 +488,9 @@ hr{
     color: #ea9d70f0;
     margin-bottom: 40%;
     position: relative;
+    font-family: "Tinos", serif;
+
 
 }
+
 
