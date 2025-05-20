@@ -489,8 +489,31 @@ hr{
     margin-bottom: 40%;
     position: relative;
     font-family: "Tinos", serif;
+}
 
+.mesaj_de_interes .informatii_inscriere p{
+    font-size: 20px;
+    color: #ea9d70f0;
+    margin-top: 0;
+    margin-left: 0%;
+    margin-bottom: 40%;
+    margin-right: 50%;
+    position: relative;
+    font-family: "Tinos", serif;
+    width: 50%;
+    justify-content: right;
+    display: inline;
+}
 
+.mesaj_de_interes .poza_inscriere{
+
+    position: relative;
+    margin: 0 auto;
+    width: 40%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: block;
 }
 
 
