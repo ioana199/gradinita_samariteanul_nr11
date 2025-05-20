@@ -471,7 +471,7 @@ hr{
     background: #fff;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     border: none;
 }
 
